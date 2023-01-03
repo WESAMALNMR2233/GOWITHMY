@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileFragment"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            >
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:gravity="center_horizontal"
+                app:srcCompat="@drawable/user"
+                android:contentDescription="TODO" />
+
+
+            <EditText
+                android:id="@+id/pname"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="اسم الثلاثي"
+                android:inputType="textPersonName"/>
+            <EditText
+                android:id="@+id/ppassword"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:hint=" كلمة السر"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                />
+            <EditText
+                android:id="@+id/paddress"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:hint=" العنوان"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <EditText
+                android:id="@+id/ptelephone"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:hint="رقم الهاتف "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/pfloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:background="#2200aa"
+                android:text="حفظ التعديلات"
+                android:clickable="true"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

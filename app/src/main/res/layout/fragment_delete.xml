@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteFragment"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="400px"
+        android:textColor="#ff0000"
+        android:textSize="20dp"
+        android:text="اختر السائق المراد حذفه"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+        android:id="@+id/driverspin"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="حذف"
+        android:background="#aa2332"
+        android:textSize="20dp"
+
+        />
+
+</LinearLayout>

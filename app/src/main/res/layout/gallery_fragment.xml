@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="100px"
+        android:paddingRight="400px"
+        android:text="الطلبات السابقة"
+        android:textColor="#990000"
+        android:textSize="26dp" />
+
+    <TableLayout
+        android:id="@+id/listRequest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:divider="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+
+        android:paddingRight="10dp"
+        android:showDividers="middle|beginning|end|none"
+        android:stretchColumns="0,2">
+
+        <TableRow android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+
+                android:background="@color/colorPrimaryDark"
+                android:paddingTop="30dp"
+                android:text="التاريخ"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:paddingTop="30dp"
+                android:text=" كلفة الرحلة"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:paddingTop="30dp"
+                android:text=" رقم السائق "
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+
+                android:paddingTop="30dp"
+                android:text="  حالة الطلب "
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

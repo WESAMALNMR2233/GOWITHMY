@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverMapActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+
+    <com.google.android.material.circularreveal.CircularRevealFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:weightSum="100"
+        >
+    <fragment
+        android:id="@+id/drmap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="900dp"
+        android:layout_weight="70"
+        />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="24dp"
+            android:clickable="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_menu_send"
+            map:backgroundTint="@color/colorPrimary"
+            map:fabCustomSize="@android:dimen/app_icon_size"
+            map:fabSize="mini"
+            />
+    </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:text="  تسجيل خروج"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

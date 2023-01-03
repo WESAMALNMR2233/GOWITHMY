@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EvaluteDriverFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="300px"
+        android:text="اختر سائق لتقييمه"
+        android:textColor="#990000"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerEva"
+        android:layout_width="530dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="80dp"
+    android:layout_gravity="center_horizontal"
+    >
+        <TextView
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="ما هو تقييمك؟ "
+            android:textColor="#990000"
+            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/editTextEva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEva"
+        android:layout_width="130dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="60dp"
+        android:text="حفظ" />
+</LinearLayout>
